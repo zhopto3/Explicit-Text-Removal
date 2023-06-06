@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hopton-project"
+version = "0.1.0"
+description = ""
+authors = ["Zachary William Hopton <zacharywilliam.hopton@uzh.ch>"]
+readme = "README.md"
+packages = [{include = "hopton_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.2.2"
+spacy = "^3.5.1"
+pandas = "^2.0.0"
+en-core-web-md = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.5.0/en_core_web_md-3.5.0-py3-none-any.whl"}
+sacremoses = "^0.0.53"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
